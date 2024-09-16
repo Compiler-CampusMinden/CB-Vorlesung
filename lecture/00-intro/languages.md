@@ -49,6 +49,106 @@ fhmedia:
 [Quelle: nach ["Lyrics of the song 99 Bottles of Beer"](https://www.99-bottles-of-beer.net/lyrics.html) on 99-bottles-of-beer.net]{.origin}
 
 
+## Test it
+
+![Bla](images/c-toolchain.png)
+
+
+
+## 1. Multiple-Choice
+
+                         --{{0}}--
+Quizzes in LiaScript are always associated with double brackets or brackets with parentheses. Only by using this single visual metaphor, we can now create various different types of quizzes. The following pattern resembles a checkbox:
+
+Multiple-choice quizzes are easy in LiaScript?
+
+- [[ ]] No, absolutely not
+- [[X]] Yes, definitely
+- [[X]] There is no easier way, prove me wrong ;-)
+
+
+
+## 2. Single-Choice
+
+               --{{0}}--
+If the previous one looked like a checkbox, parentheses look like radio buttons. Bam, we have created a single-choice quiz.
+
+Is it really that simple?
+
+- [(X)] Yes, it is.
+- [( )] No, but in an ideal LMS it would.
+
+
+
+## 3. Matrix
+
+                --{{0}}--
+And if you think of multiple-choice and single-choice quizzes as vectors, sure, you can lay them down to define more complex matrix quizzes.
+
+
+German articles are weird. Try to guess the right one.
+
+- [[male (der)] (female [die]) [neuter (das)]]
+- [    [X]           [ ]             [ ]     ]  Mann - man
+- [    ( )           (X)             ( )     ]  Frau - woman
+- [    [X]           [ ]             [ ]     ]  Junge - boy
+- [    ( )           ( )             (X)     ]  Mädchen - girl
+- [    [X]           [X]             [ ]     ]  Paprika - bell pepper
+- [    (X)           (X)             (X)     ]  Joghurt - yogurt
+
+
+
+## 4. Text-Input
+
+                --{{0}}--
+A text-input is basically an input field with a predefined solution.
+
+What did the fish say when it swam into the wall?
+
+[[dam]]
+
+
+
+## 5. Selection
+
+                --{{0}}--
+A selection is basically an input with multiple options separated by vertical bars, where the correct solution is enclosed in parentheses.
+
+
+What is the derivative function of $f(x) = x^6$?
+
+[[ $f'(x) = 6$ | ( $f'(x) = 6x^5$ ) | $f'(x) = 5x^6$ ]]
+
+
+
+## 6. Gap-Text
+
+                --{{0}}--
+Now that you know this pattern, you will see it everywhere and you can use it within all Markdown blocks to turn them into quizzes.
+
+
+| Verb    | Person    | Präsens werden | Partizip II    | Infinitiv haben/sein |
+|---------|:---------:|:--------------:|:--------------:|:--------------------:|
+| gehen   | Ich       |  [[ werde  ]]  | [[ gegangen ]] | [[ sein ]].          |
+| sage    | Du        |  [[ wirst  ]]  | [[ gesagt ]]   | [[ haben ]].         |
+| machen  | Er/Sie/Es |  [[ wird   ]]  | [[ gemacht ]]  | [[ haben ]].         |
+| laufen  | Wir       |  [[ werden ]]  | [[ gelaufen ]] | [[ sein ]].          |
+| singen  | Ihr       |  [[ werdet ]]  | [[ gesungen ]] | [[ haben ]].         |
+| spielen | Sie       |  [[ werden ]]  | [[ gespielt ]] | [[ haben ]].         |
+
+                --{{1}}--
+Or, you can combine them with other LiaScript elements to create even more complex ones.
+
+                 {{1 |>}}
+The film that I saw [[(that)|those|these|then]] night wasn’t very good.
+It was all [[ about ]] a man [[ who ]] built a
+time machine so he [[ could ]] travel back in time.
+It took him ages and ages [[ to ]] build the machine.
+
+
+
+
+
 ## Imperativ, Hardwarenah: C
 
 ``` {.c size="footnotesize"}
