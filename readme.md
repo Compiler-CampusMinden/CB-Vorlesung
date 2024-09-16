@@ -1,7 +1,14 @@
----
-archetype: "home"
-title: "IFM 3.1 (PO23) / IFM 5.21 (PO18): Compilerbau (Winter 2024/25)"
----
+
+<!--
+@open
+<script modify="false" run-once>
+const origin = window.location.origin;
+const pathname = window.location.pathname;
+`LIASCRIPT: [@0](${origin + pathname}?@1)`
+</script>
+@end
+-->
+
 
 
 ![](admin/images/architektur_cb.png){width="80%"}
@@ -16,6 +23,13 @@ Datenstrukturen und Programmiersprachenkonzepte zur Anwendung.
 In diesem Modul geht es um ein grundlegendes Verständnis für die wichtigsten Konzepte
 im Compilerbau. Wir schauen uns dazu relevante aktuelle Tools und Frameworks an und
 setzen diese bei der Erstellung eines kleinen Compiler-Frontends für C++ ein.
+
+## Test LiaScript
+
+Hier ein direkter Link: [Sprachen](lecture/00-intro/languages.md)
+
+Hier ein Link mit dem LiaScript-Makro:
+@[open(Sprachen)](lecture/00-intro/languages.md)
 
 
 ## Überblick Modulinhalte
